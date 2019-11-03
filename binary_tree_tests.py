@@ -1,15 +1,23 @@
-import unnitest
+import unittest
 import random
 import os
 import sys
+import binary_tree as bt
 
 
 class Test_Binary_Tree(unittest.TestCase):
-    """Tests for Binary Search Tree"""
+    """Tests Binary Search Tree"""
 
-    def test_hist_already_exists(self):
-        with self.assertRaises(OSError):
-            dv.histogram([1, 2, 3, 4], 'already.png')
+    def search_null_node(self):
+        A = bt.Node()
+        with self.assertRaises(ValueError):
+            search(A, 1)
 
-    def test_mean_mixed_list(self):
-        self.assertEqual(ml.list_mean(['a', 2, 'c', '4']), 3)
+    def insert_value(self):
+        A = bt.Node()
+        bt.insert(A, 1, 'one')
+        self.assertEqual(A.key, 'one')
+
+
+if __name__ == '__main__':
+    unittest.main()
