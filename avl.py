@@ -1,7 +1,7 @@
 class Node(object):
     """The basis of the AVL tree is the node object"""
 
-    def __init__(self, parent, key, value):
+    def __init__(self, key=None):
         """Instantiates a Node object
         key: the key of the node
         value: the value of the node
@@ -11,7 +11,7 @@ class Node(object):
         """
         self.key = key
         self.value = None
-        self.parent = parent
+        self.parent = None
         self.left = None
         self.right = None
 
