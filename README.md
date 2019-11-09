@@ -1,4 +1,5 @@
 # Binary Search Tree
+[![Build Status](https://travis-ci.com/cu-swe4s-fall-2019/trees-tacaro.svg?branch=master)](https://travis-ci.com/cu-swe4s-fall-2019/trees-tacaro)
 ## Introduction
 The purpose of this program is to benchmark and compare various data structures in the storage and searching of a series of non-random or random datasets. It utilizes the following files.
 - README.md: This file!
@@ -18,7 +19,9 @@ The purpose of this program is to benchmark and compare various data structures 
 Real-time profiling was conducted using the `time` module in python.
 *Results: Binary Tree, Unbalanced*
 Time it took to build struct: 0.002754688262939453
+
 Time it took to search for 3 items present in the struct: 6.318092346191406e-05
+
 Time it took to search for 3 items absent from the struct: 9.799003601074219e-05
 
 ### Installation:
