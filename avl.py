@@ -51,6 +51,7 @@ class Node(object):
             def update_height(node):
                 node.height = max(height(node.left), height(node.right)) + 1
 
+                
 class AVL(object):
 
     def __init__(self):
